@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.Promise = global.Promise;
-
 const SpecialtySchema = mongoose.Schema({
     SpecialtyCode :{
         type: String,

@@ -7,7 +7,7 @@ const MajorSchema = mongoose.Schema({
     },
     MajorCode : {
         type : String,
-        require:true,
+        unique:true,
     },
     MajorName : {
         type : String,
