@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const MajorSchema = mongoose.Schema({
     Specialty_id : {
         type : mongoose.Schema.Types.ObjectId,
-        ref  : 'Specialtys'
+        ref  : 'Specialty'
     },
     MajorCode : {
         type : String,
