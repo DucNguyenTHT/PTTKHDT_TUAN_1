@@ -1,0 +1,36 @@
+GET http://localhost:5000/api/graduation
+
+### http://localhost:5000/api/graduation/:id
+@get_major_id=
+GET http://localhost:5000/api/graduation/{{get_major_id}}
+
+### http://localhost:5000/api/graduation/:major
+@save_id=
+POST http://localhost:5000/api/graduation/{{save_id}}
+Content-Type: application/json
+
+{
+    "GraduationCode":"",
+    "GraduationName":"",
+    "GraduationTime":"",
+    "GraduationStudentNumber":"",
+    "GraduationKey":""
+}
+
+### http://localhost:5000/api/graduation/:id
+@update_id=
+PUT http://localhost:5000/api/graduation/{{update_id}}
+Content-Type: application/json
+
+
+{
+    "GraduationCode":"",
+    "GraduationName":"",
+    "GraduationTime":"",
+    "GraduationStudentNumber":"",
+    "GraduationKey":""
+}
+
+### http://localhost:5000/api/graduation/:id
+@delete_id=
+DELETE  http://localhost:5000/api/graduation/{{delete_id}}

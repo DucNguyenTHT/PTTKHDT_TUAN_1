@@ -1,0 +1,33 @@
+###
+@get_id=5f6fbb4da0e07a34cc8172cc
+GET http://localhost:5000/api/major/{{get_id}}
+
+
+###
+@save_id=5f6fbb4da0e07a34cc8172cc
+POST http://localhost:5000/api/major/{{save_id}}
+Content-Type: application/json
+
+{
+    "MajorCode":"TM",
+    "MajorName":"Toán Ứng Dụng",
+    "MajorGlobalName":"Applied Mathematics",
+    "date":"Từ Từ Rồi Tính"
+}
+
+###
+@update_id=
+PUT http://localhost:5000/api/major/{{update_id}}}
+Content-Type: application/json
+
+{
+    "MajorCode":"TM",
+    "MajorName":"Toán Ứng Dụng",
+    "MajorGlobalName":"Applied Mathematics",
+    "date":"Từ Từ Rồi Tính"
+}
+
+###
+@delete_id=
+DELETE http://localhost:5000/api/major/{{delete_id}}
+###

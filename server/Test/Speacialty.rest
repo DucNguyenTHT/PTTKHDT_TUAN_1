@@ -1,0 +1,28 @@
+###
+GET http://localhost:5000/api/speacialty
+
+###
+POST http://localhost:5000/api/speacialty
+Content-Type: application/json
+
+{
+    "SpecialtyCode":"A106",
+    "LocalName":"Du Lịch",
+    "GlobalName":"tourism"
+}
+###
+@update_id=
+PUT http://localhost:5000/api/speacialty/{{update_id}}
+Content-Type: application/json
+
+
+{
+    "SpecialtyCode":"A106",
+    "LocalName":"Toán Tin",
+    "GlobalName":"Computer Sience"
+}
+
+###
+@Delete_id=
+DELETE http://localhost:5000/api/speacialty/{{Delete_id}}
+###

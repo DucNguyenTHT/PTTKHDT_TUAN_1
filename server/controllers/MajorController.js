@@ -1,5 +1,3 @@
-const express = require('express');
-const { findById } = require('../models/MajorSchema');
 const MajorSchema = require('../models/MajorSchema');
 
 exports.GetmajorOfSpeacialty = (req,res) => {

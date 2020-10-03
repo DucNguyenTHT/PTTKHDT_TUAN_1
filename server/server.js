@@ -11,6 +11,6 @@ connectDB();
 //middleware route
 app.use('/api/major',require('./routes/Major'))
 app.use('/api/speacialty',require('./routes/Speacialty'))
-
+app.use('/api/graduation',require('./routes/Graduation'))
 
 app.listen(PORT,()=>{console.log(`Server is running on : http://localhost:${PORT}`)})
