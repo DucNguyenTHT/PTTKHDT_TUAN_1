@@ -1,20 +1,20 @@
 GET http://localhost:5000/api/graduation
 
 ### http://localhost:5000/api/graduation/:id
-@get_major_id=
+@get_major_id=5f740f199840c22f28e25688
 GET http://localhost:5000/api/graduation/{{get_major_id}}
 
 ### http://localhost:5000/api/graduation/:major
-@save_id=
+@save_id=5f740f199840c22f28e25688
 POST http://localhost:5000/api/graduation/{{save_id}}
 Content-Type: application/json
 
 {
-    "GraduationCode":"",
-    "GraduationName":"",
-    "GraduationTime":"",
-    "GraduationStudentNumber":"",
-    "GraduationKey":""
+    "GraduationCode":"CD103",
+    "GraduationName":"ChuyenDeTotNghiep",
+    "GraduationTime":"2",
+    "GraduationStudentNumber":"5",
+    "GraduationKey":"ChuyenDeToanTin"
 }
 
 ### http://localhost:5000/api/graduation/:id

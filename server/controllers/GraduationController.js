@@ -6,8 +6,8 @@ exports.GetAllGraduation = (req,res) =>{
     .catch((err)=>{res.status(500).send(err)})
 }
 
-exports.GetOneGraduation = (req,res) =>{
-    GraduationSchema.findById(req.params.id)
+exports.GetGraduationbyMajor_ID = (req,res) =>{
+    GraduationSchema.find({Major_ID:req.params.id})
     .then((value)=>{res.status(200).send(value)})
     .catch((err)=>{res.status(500).send(err)})
 }
@@ -20,9 +20,8 @@ exports.SaveOneGraduation = (req,res) =>{
         GraduationStudentNumber,
         GraduationKey
     } = req.body
-    const {Major_ID} = req.params.major
     let Graduation = new GraduationSchema({
-        Major_ID,
+        Major_ID:req.params.major,
         GraduationCode,
         GraduationName,
         GraduationTime,
