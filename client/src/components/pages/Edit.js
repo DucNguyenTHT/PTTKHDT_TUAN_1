@@ -33,7 +33,7 @@ const Edit = ({match}) => {
 
     return (
       <Fragment>
-        {Toprevious ? <Redirect to={`/${match.params.special}`} />: null}
+        {Toprevious ? <Redirect to={`/special/${match.params.special}`} />: null}
         <div className='container'>
             <h1>Cập nhật thông tin </h1>
             <form className={classes.root} noValidate autoComplete="off" onSubmit={update}>

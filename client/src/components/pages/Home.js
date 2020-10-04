@@ -18,7 +18,7 @@ const Home = () => {
                                 {item.LocalName}
                             </h2>
                             <Button>
-                                <Link to={`/${item._id}`}>
+                                <Link to={`/special/${item._id}`}>
                                     Chi Tiết
                                 </Link>
                             </Button>

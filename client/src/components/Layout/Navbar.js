@@ -10,9 +10,10 @@ const Navbar = () => {
                 <ul>
                     <li><Link to='/About'>About</Link></li>
                     <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/chuyende'>Chuyên Đề</Link></li>
+                    <li><Link to='/timtheonganh'>Tìm Theo Ngành</Link></li>
                 </ul>
             </div>
     )
 }
-
 export default Navbar

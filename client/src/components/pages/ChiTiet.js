@@ -12,7 +12,7 @@ const ChiTiet = ({match}) => {
     return (
         <div>
             <Button color='red'>
-                <Link to={`/${match.params.special}/add`}>
+                <Link to={`/special/${match.params.special}/add`}>
                     <h5>+Thêm Ngành</h5>
                 </Link>
             </Button>
@@ -40,8 +40,13 @@ const ChiTiet = ({match}) => {
                                     }}
                                 >Delete</Button>
                                 <Button color='blue'>
-                                    <Link to={`/${match.params.special}/update/${data._id}`}>
+                                    <Link to={`/special/${match.params.special}/update/${data._id}`}>
                                         update
+                                    </Link>
+                                </Button>
+                                <Button color='blue'>
+                                    <Link to={`/chuyende/add/${data._id}`}>
+                                        + Chuyên Đề
                                     </Link>
                                 </Button>
                             </td>
