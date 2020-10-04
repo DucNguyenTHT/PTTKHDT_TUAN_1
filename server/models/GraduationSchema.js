@@ -9,6 +9,9 @@ const GraduationSchema = mongoose.Schema({
         type : String,
         unique:true
     },
+    GraduationDescription: {
+        type : String
+    },
     GraduationName : {
         type : String
     },

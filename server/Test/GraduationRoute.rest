@@ -1,18 +1,23 @@
 GET http://localhost:5000/api/graduation
 
 ### http://localhost:5000/api/graduation/:id
-@get_major_id=5f740f199840c22f28e25688
+@get_major_id=
 GET http://localhost:5000/api/graduation/{{get_major_id}}
 
 ### http://localhost:5000/api/graduation/:major
-@save_id=5f740f199840c22f28e25688
+@save_id=5f79a91c117f341e24a52677
+#5f79a8da117f341e24a52676
+#5f79a91c117f341e24a52677
+#5f79a946117f341e24a52678
+#5f79a992117f341e24a52679
 POST http://localhost:5000/api/graduation/{{save_id}}
 Content-Type: application/json
 
 {
-    "GraduationCode":"CD103",
-    "GraduationName":"ChuyenDeTotNghiep",
-    "GraduationTime":"2",
+    "GraduationCode":"CD206",
+    "GraduationName":"Chuyên Đề Test 6",
+    "GraduationDescription":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique culpa autem esse tempore. Quidem voluptatem quisquam quod impedit, cumque minima velit esse non assumenda, tenetur magni consequatur. In, minima hic?",
+    "GraduationTime":"6",
     "GraduationStudentNumber":"5",
     "GraduationKey":"ChuyenDeToanTin"
 }
@@ -32,5 +37,5 @@ Content-Type: application/json
 }
 
 ### http://localhost:5000/api/graduation/:id
-@delete_id=
+@delete_id= 5f799c1e8b8ebd2f4cd5566f
 DELETE  http://localhost:5000/api/graduation/{{delete_id}}

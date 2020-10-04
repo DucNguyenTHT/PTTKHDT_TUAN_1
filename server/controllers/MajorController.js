@@ -9,7 +9,15 @@ exports.GetmajorOfSpeacialty = (req,res) => {
         res.status(500).send({message:err.message});
     })
 } 
-
+exports.Getmajor = (req,res) => {
+    MajorSchema.find()
+    .then((major)=> {
+        res.status(200).send(major);
+    })
+    .catch((err)=>{
+        res.status(500).send({message:err.message});
+    })
+} 
 exports.SaveAmajorOfSpeacialty = (req,res) => {
     const {
         MajorCode,

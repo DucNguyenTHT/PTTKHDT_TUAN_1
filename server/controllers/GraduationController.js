@@ -15,6 +15,7 @@ exports.GetGraduationbyMajor_ID = (req,res) =>{
 exports.SaveOneGraduation = (req,res) =>{
     const {
         GraduationCode,
+        GraduationDescription,
         GraduationName,
         GraduationTime,
         GraduationStudentNumber,
@@ -23,6 +24,7 @@ exports.SaveOneGraduation = (req,res) =>{
     let Graduation = new GraduationSchema({
         Major_ID:req.params.major,
         GraduationCode,
+        GraduationDescription,
         GraduationName,
         GraduationTime,
         GraduationStudentNumber,
